@@ -135,7 +135,7 @@ function Table() {
           </tr>
           <tr>
             <td className="title-one bg-color">Итоги</td>
-            <td className='bg-color'>
+            <td className="bg-color">
               <div className="d-flex justify">
                 <div className="first">327 872</div>
                 <div>6 889</div>
@@ -145,7 +145,7 @@ function Table() {
                 <div className="last">76 195</div>
               </div>
             </td>
-            <td className='bg-color'>
+            <td className="bg-color">
               <div className="d-flex justify">
                 <div className="first">
                   <a href="#">1 047.93</a>
@@ -154,7 +154,7 @@ function Table() {
                 <div className="last">1 150 9...</div>
               </div>
             </td>
-            <td className='bg-color'>
+            <td className="bg-color">
               <div className="d-flex justify">
                 <div className="first">89</div>
                 <div>85...</div>
@@ -194,9 +194,7 @@ function Table() {
             <td>
               <div className="d-flex justify">
                 <div className="first">
-                  <a href="#">
-                    344.54
-                  </a>
+                  <a href="#">344.54</a>
                 </div>
                 <div>0</div>
                 <div className="last">677 870...</div>
@@ -243,9 +241,7 @@ function Table() {
             <td>
               <div className="d-flex justify">
                 <div className="first">
-                  <a href="#">
-                    181.64
-                  </a>
+                  <a href="#">181.64</a>
                 </div>
                 <div>16...</div>
                 <div className="last">423 713...</div>
@@ -288,7 +284,9 @@ function Table() {
             </td>
             <td>
               <div className="d-flex justify">
-                <div className="first"><a href="#">332.41</a></div>
+                <div className="first">
+                  <a href="#">332.41</a>
+                </div>
                 <div>0</div>
                 <div className="last">648 828...</div>
               </div>
@@ -333,7 +331,9 @@ function Table() {
             </td>
             <td>
               <div className="d-flex justify">
-                <div className="first"><a href="#">107.13</a></div>
+                <div className="first">
+                  <a href="#">107.13</a>
+                </div>
                 <div>13...</div>
                 <div className="last">242 913...</div>
               </div>
@@ -375,7 +375,9 @@ function Table() {
             </td>
             <td>
               <div className="d-flex justify">
-                <div className="first"><a href="#">55.11</a></div>
+                <div className="first">
+                  <a href="#">55.11</a>
+                </div>
                 <div>0</div>
                 <div className="last">109 487...</div>
               </div>
@@ -417,7 +419,9 @@ function Table() {
             </td>
             <td>
               <div className="d-flex justify">
-                <div className="first"><a href="#">15.4</a></div>
+                <div className="first">
+                  <a href="#">15.4</a>
+                </div>
                 <div>40...</div>
                 <div className="last">29 021.45</div>
               </div>
@@ -459,7 +463,9 @@ function Table() {
             </td>
             <td>
               <div className="d-flex justify">
-                <div className="first"><a href="#">15.21</a></div>
+                <div className="first">
+                  <a href="#">15.21</a>
+                </div>
                 <div>21...</div>
                 <div className="last">28 614.4</div>
               </div>
