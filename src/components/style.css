@@ -1,0 +1,216 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+td th {
+  padding: 0;
+}
+
+.pr {
+  display: flex;
+}
+
+.btn-plus {
+  background-color: darkgray;
+  color: white;
+  width: 17px;
+  text-align: center;
+  border-radius: 2px;
+  margin: auto 10px;
+  cursor: pointer;
+}
+
+.img-violet {
+  width: 25px;
+  margin: auto 0;
+  margin-right: 10px;
+}
+
+.violet {
+  width: 100%;
+}
+
+.red-text {
+  padding: 10px 10px;
+  text-align: left;
+  color: #ab0000;
+  font-weight: 700;
+}
+
+.pr {
+  padding: 10px 10px;
+}
+
+.tr {
+  color: #1529c9;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.group1 {
+  font-weight: 300;
+  font-size: 14px;
+  color: darkgray;
+}
+
+.img-crm {
+  width: 100%;
+}
+
+.block-crm {
+  width: 20px;
+  padding-left: 15px;
+}
+
+.img-col {
+  width: 100%;
+}
+
+.block-col {
+  width: 20px;
+  padding-left: 15px;
+}
+
+.img-gear {
+  width: 100%;
+}
+
+.block-gear {
+  width: 20px;
+  padding-left: 15px;
+}
+
+.img-box {
+  width: 100%;
+}
+
+.block-box {
+  width: 20px;
+  padding-left: 20px;
+  padding-top: 3px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.line-model {
+  color: grey;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 5px;
+  margin-top: 6px;
+}
+
+.sales {
+  margin-left: 5px;
+}
+
+.table-head {
+  width: 100%;
+}
+
+.justify {
+  justify-content: space-between;
+}
+
+.block-icon {
+  color: lightgray;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-right: 3px;
+}
+
+.block-icon2 {
+  color: lightgray;
+  font-size: 14px;
+  margin-right: 3px;
+}
+
+.block-icon3 {
+  color: lightgray;
+  font-size: 14px;
+  margin-right: 3px;
+  margin-top: 10px;
+}
+
+.icon-one {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.icon-two {
+  cursor: pointer;
+}
+
+.red-text2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  color: #ab0000;
+  font-weight: 700;
+}
+
+.red-text3 {
+  color: #ab0000;
+  font-weight: 700;
+  padding-left: 5px;
+}
+
+.red-text4 {
+  color: #ab0000;
+  font-weight: 700;
+  padding-left: 5px;
+}
+
+.title-one {
+  padding: 20px 10px;
+  font-weight: 700;
+}
+
+.bg-color {
+  background-color: rgba(235, 214, 56, 0.12);
+}
+
+.block-padding {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.link-one {
+  font-size: 12px;
+  color: #1529c9;
+}
+
+.first {
+  padding-left: 50px;
+}
+
+.last {
+  padding-right: 50px;
+}
+
+.col-vo {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+}
+
+.blue {
+  color: blue;
+}
+
+.online {
+  height: 10px;
+  width: 10px;
+  background-color: lawngreen;
+  border-radius: 5px;
+  margin: auto 0;
+  margin-right: 10px;
+}
+
+.e-mail {
+  margin-top: 7px;
+}
