@@ -1,5 +1,12 @@
 import React from "react";
-import img from "./IMG/one.ico";
+import One from './assets/one.ico';
+import Two from './assets/two.ico';
+import Three from './assets/three.ico';
+import Four from './assets/four.png';
+import Five from './assets/five.ico';
+import Six from './assets/six.ico';
+import Seven from './assets/seven.ico';
+import Eight from './assets/eight.ico';
 
 function Table() {
   return (
@@ -7,8 +14,8 @@ function Table() {
       <table border="1" className="table-head">
         <thead>
           <tr>
-            <td className="red-text">Источники трафика</td>
-            <td className="">
+            <td className="red-text" width='250'>Источники трафика</td>
+            <td className="" width='550'>
               <div className="d-flex justify">
                 <div className="red-text2">Трафик</div>
                 <div className="block-icon">
@@ -21,7 +28,7 @@ function Table() {
                 </div>
               </div>
             </td>
-            <td className="">
+            <td className="" width='250'>
               <div className="d-flex justify">
                 <div>
                   <div className="d-flex">
@@ -55,7 +62,7 @@ function Table() {
                 </div>
               </div>
             </td>
-            <td className="">
+            <td className="" width='175'>
               <div className="d-flex justify">
                 <div>
                   <div className="d-flex">
@@ -171,7 +178,7 @@ function Table() {
                 <div className="img-violet">
                   <img
                     className="violet"
-                    src="https://testing1.alytics.ru/icons/usersgroup.png"
+                    src={One}
                     alt="Img"
                   />
                 </div>
@@ -216,7 +223,7 @@ function Table() {
                   <div className="img-violet">
                     <img
                       className="violet"
-                      src="https://direct.yandex.ru/favicon.ico"
+                      src={Two}
                       alt="Img"
                     />
                   </div>
@@ -262,7 +269,7 @@ function Table() {
                 <div className="img-violet">
                   <img
                     className="violet"
-                    src="https://testing1.alytics.ru/icons/groups/315b6fb9-cc96-4f34-9e1c-50f5550ce863.png"
+                    src={Three}
                     alt="Img"
                   />
                 </div>
@@ -307,7 +314,7 @@ function Table() {
                   <div className="img-violet">
                     <img
                       className="violet"
-                      src="https://www.google.com/images/branding/product/1x/ads_24dp.png"
+                      src={Four}
                       alt="Img"
                     />
                   </div>
@@ -353,7 +360,7 @@ function Table() {
                 <div className="img-violet">
                   <img
                     className="violet"
-                    src="https://testing1.alytics.ru/icons/groups/927a0bd0-bc5a-4722-beb7-c1d520c7ec72.png"
+                    src={Five}
                     alt="Img"
                   />
                 </div>
@@ -397,7 +404,7 @@ function Table() {
                 <div className="img-violet">
                   <img
                     className="violet"
-                    src="https://testing1.alytics.ru/icons/groups/927a0bd0-bc5a-4722-beb7-c1d520c7ec72.png"
+                    src={Six}
                     alt="Img"
                   />
                 </div>
@@ -441,7 +448,7 @@ function Table() {
                 <div className="img-violet">
                   <img
                     className="violet"
-                    src="https://testing1.alytics.ru/icons/e-mail.ico"
+                    src={Six}
                     alt="Img"
                   />
                 </div>
@@ -485,7 +492,7 @@ function Table() {
                 <div className="img-violet">
                   <img
                     className="violet"
-                    src="https://testing1.alytics.ru/icons/getresponse.ico"
+                    src={Seven}
                     alt="Img"
                   />
                 </div>
@@ -527,7 +534,7 @@ function Table() {
                 <div className="img-violet">
                   <img
                     className="violet"
-                    src="https://testing1.alytics.ru/icons/cm.ico"
+                    src={Eight}
                     alt="Img"
                   />
                 </div>
