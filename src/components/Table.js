@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import One from './assets/one.ico';
 import Two from './assets/two.ico';
 import Three from './assets/three.ico';
@@ -7,8 +7,15 @@ import Five from './assets/five.ico';
 import Six from './assets/six.ico';
 import Seven from './assets/seven.ico';
 import Eight from './assets/eight.ico';
+import Nine from './assets/nine.png';
+import Ten from './assets/ten.png';
+import Eleven from './assets/eleven.png';
+import Tvelv from './assets/tvelv.png';
+
 
 function Table() {
+  const [show, setShow] = useState(false);
+
   return (
     <div>
       <table border="1" className="table-head">
@@ -34,7 +41,7 @@ function Table() {
                   <div className="d-flex">
                     <div className="block-crm">
                       <img
-                        src="https://testing1.alytics.ru/images/multichannel/crm.png"
+                        src={Nine}
                         alt="Img"
                         className="img-crm"
                       />
@@ -44,7 +51,7 @@ function Table() {
                   <div className="d-flex a1">
                     <div className="block-col">
                       <img
-                        src="https://testing1.alytics.ru/images/goal_models/png/model_linear.png"
+                        src={Ten}
                         alt="Img"
                         className="img-col"
                       />
@@ -68,7 +75,7 @@ function Table() {
                   <div className="d-flex">
                     <div className="block-gear">
                       <img
-                        src="https://testing1.alytics.ru/images/multichannel/composite.png"
+                        src={Eleven}
                         alt="img"
                         className="img-gear"
                       />
@@ -79,7 +86,7 @@ function Table() {
                     <div className="d-flex">
                       <div className="block-box">
                         <img
-                          src="https://testing1.alytics.ru/images/goal_models/png/composite.png"
+                          src={Tvelv}
                           alt="Img"
                           className="img-box"
                         />
@@ -400,7 +407,7 @@ function Table() {
           <tr>
             <td>
               <div className="pr">
-                <div className="btn-plus">-</div>
+                <div className="btn-plus" onClick={() => setShow(!show)}>{show ? '-' : '+'}</div>
                 <div className="img-violet">
                   <img
                     className="violet"
@@ -410,7 +417,7 @@ function Table() {
                 </div>
                 <div className="block-group1">
                   <div className="tr">Email-рассылки</div>
-                  <div className="group1">Группа. Источников 5</div>
+                  <div className="group1">Группа. Источников 3</div>
                 </div>
               </div>
             </td>
@@ -441,134 +448,137 @@ function Table() {
               </div>
             </td>
           </tr>
-          <tr>
-            <td>
-              <div className="pr">
-                <div className="btn-plus"> </div>
-                <div className="img-violet">
-                  <img
-                    className="violet"
-                    src={Six}
-                    alt="Img"
-                  />
+          {show && <>
+            <tr>
+              <td>
+                <div className="pr">
+                  <div className="btn-plus"> </div>
+                  <div className="img-violet">
+                    <img
+                      className="violet"
+                      src={Six}
+                      alt="Img"
+                    />
+                  </div>
+                  <div className="block-group1">
+                    <div className="tr e-mail">e-mail / e-mail</div>
+                    <div className="group1"> </div>
+                  </div>
                 </div>
-                <div className="block-group1">
-                  <div className="tr e-mail">e-mail / e-mail</div>
-                  <div className="group1"> </div>
+              </td>
+              <td>
+                <div className="d-flex justify">
+                  <div className="first">-</div>
+                  <div>81</div>
+                  <div>81</div>
+                  <div>-</div>
+                  <div>39.51</div>
+                  <div className="last">3 200</div>
                 </div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">-</div>
-                <div>81</div>
-                <div>81</div>
-                <div>-</div>
-                <div>39.51</div>
-                <div className="last">3 200</div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">
-                  <a href="#">15.21</a>
+              </td>
+              <td>
+                <div className="d-flex justify">
+                  <div className="first">
+                    <a href="#">15.21</a>
+                  </div>
+                  <div>21...</div>
+                  <div className="last">28 614.4</div>
                 </div>
-                <div>21...</div>
-                <div className="last">28 614.4</div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">2</div>
-                <div>1 ...</div>
-                <div className="last">2...</div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div className="pr">
-                <div className="btn-plus"> </div>
-                <div className="img-violet">
-                  <img
-                    className="violet"
-                    src={Seven}
-                    alt="Img"
-                  />
+              </td>
+              <td>
+                <div className="d-flex justify">
+                  <div className="first">2</div>
+                  <div>1 ...</div>
+                  <div className="last">2...</div>
                 </div>
-                <div className="block-group1">
-                  <div className="tr e-mail">getresponse / email</div>
-                  <div className="group1"> </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div className="pr">
+                  <div className="btn-plus"> </div>
+                  <div className="img-violet">
+                    <img
+                      className="violet"
+                      src={Seven}
+                      alt="Img"
+                    />
+                  </div>
+                  <div className="block-group1">
+                    <div className="tr e-mail">getresponse / email</div>
+                    <div className="group1"> </div>
+                  </div>
                 </div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">-</div>
-                <div>1</div>
-                <div>1</div>
-                <div>-</div>
-                <div>0</div>
-                <div className="last">0</div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">0</div>
-                <div>0</div>
-                <div className="last">407.05</div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">0</div>
-                <div>0</div>
-                <div className="last">0</div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div className="pr">
-                <div className="btn-plus"> </div>
-                <div className="img-violet">
-                  <img
-                    className="violet"
-                    src={Eight}
-                    alt="Img"
-                  />
+              </td>
+              <td>
+                <div className="d-flex justify">
+                  <div className="first">-</div>
+                  <div>1</div>
+                  <div>1</div>
+                  <div>-</div>
+                  <div>0</div>
+                  <div className="last">0</div>
                 </div>
-                <div className="block-group1">
-                  <div className="tr e-mail">cm / email</div>
-                  <div className="group1"> </div>
+              </td>
+              <td>
+                <div className="d-flex justify">
+                  <div className="first">0</div>
+                  <div>0</div>
+                  <div className="last">407.05</div>
                 </div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">-</div>
-                <div>0</div>
-                <div>0</div>
-                <div>-</div>
-                <div>0</div>
-                <div className="last">0</div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">0</div>
-                <div>0</div>
-                <div className="last">0</div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">0</div>
-                <div>0</div>
-                <div className="last">0</div>
-              </div>
-            </td>
-          </tr>
+              </td>
+              <td>
+                <div className="d-flex justify">
+                  <div className="first">0</div>
+                  <div>0</div>
+                  <div className="last">0</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div className="pr">
+                  <div className="btn-plus"> </div>
+                  <div className="img-violet">
+                    <img
+                      className="violet"
+                      src={Eight}
+                      alt="Img"
+                    />
+                  </div>
+                  <div className="block-group1">
+                    <div className="tr e-mail">cm / email</div>
+                    <div className="group1"> </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div className="d-flex justify">
+                  <div className="first">-</div>
+                  <div>0</div>
+                  <div>0</div>
+                  <div>-</div>
+                  <div>0</div>
+                  <div className="last">0</div>
+                </div>
+              </td>
+              <td>
+                <div className="d-flex justify">
+                  <div className="first">0</div>
+                  <div>0</div>
+                  <div className="last">0</div>
+                </div>
+              </td>
+              <td>
+                <div className="d-flex justify">
+                  <div className="first">0</div>
+                  <div>0</div>
+                  <div className="last">0</div>
+                </div>
+              </td>
+            </tr>
+          </>}
+
         </tbody>
       </table>
     </div>
