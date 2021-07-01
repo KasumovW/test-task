@@ -11,10 +11,11 @@ import Nine from './assets/nine.png';
 import Ten from './assets/ten.png';
 import Eleven from './assets/eleven.png';
 import Tvelv from './assets/tvelv.png';
+import { useSelector } from 'react-redux';
 
 
 function Table() {
-  const [show, setShow] = useState(false);
+  const data = useSelector(state => state.data.data);
 
   return (
     <div>
@@ -178,407 +179,56 @@ function Table() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>
-              <div className="pr">
-                <div className="btn-plus">+</div>
-                <div className="img-violet">
-                  <img
-                    className="violet"
-                    src={One}
-                    alt="Img"
-                  />
-                </div>
-                <div className="block-group1">
-                  <div className="tr">Пр тр</div>
-                  <div className="group1">Группа. Источников 1</div>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">-</div>
-                <div>1 716</div>
-                <div>1 716</div>
-                <div>-</div>
-                <div>0</div>
-                <div className="last">0</div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">
-                  <a href="#">344.54</a>
-                </div>
-                <div>0</div>
-                <div className="last">677 870...</div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">29</div>
-                <div>0</div>
-                <div className="last">1...</div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div className="d-flex justify">
-                <div className="pr">
-                  <div className="btn-plus"></div>
-                  <div className="img-violet">
-                    <img
-                      className="violet"
-                      src={Two}
-                      alt="Img"
-                    />
-                  </div>
-                  <div className="block-group1">
-                    <div className="tr">Яндекс Директ</div>
-                    <div className="group1">Платная реклама</div>
-                  </div>
-                </div>
-                <div className="online"> </div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">299 571</div>
-                <div>843</div>
-                <div>1 388</div>
-                <div>0.28</div>
-                <div>35.9</div>
-                <div className="last">30 266</div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">
-                  <a href="#">181.64</a>
-                </div>
-                <div>16...</div>
-                <div className="last">423 713...</div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">28</div>
-                <div>1 ...</div>
-                <div className="last">3...</div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div className="pr">
-                <div className="btn-plus">+</div>
-                <div className="img-violet">
-                  <img
-                    className="violet"
-                    src={Three}
-                    alt="Img"
-                  />
-                </div>
-                <div className="block-group1">
-                  <div className="tr">Органический поиск</div>
-                  <div className="group1">Группа. Источников 7</div>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">-</div>
-                <div>1 370</div>
-                <div>1 370</div>
-                <div>-</div>
-                <div>0</div>
-                <div className="last">0</div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">
-                  <a href="#">332.41</a>
-                </div>
-                <div>0</div>
-                <div className="last">648 828...</div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">14</div>
-                <div>0</div>
-                <div className="last">1...</div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div className="d-flex justify">
-                <div className="pr">
-                  <div className="btn-plus"> </div>
-                  <div className="img-violet">
-                    <img
-                      className="violet"
-                      src={Four}
-                      alt="Img"
-                    />
-                  </div>
-                  <div className="block-group1">
-                    <div className="tr">Google Ads</div>
-                    <div className="group1">Платная реклама</div>
-                  </div>
-                </div>
-                <div className="online"> </div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">5 272</div>
-                <div>252</div>
-                <div>449</div>
-                <div>4.78</div>
-                <div>58.77</div>
-                <div className="last">14 809</div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">
-                  <a href="#">107.13</a>
-                </div>
-                <div>13...</div>
-                <div className="last">242 913...</div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">10</div>
-                <div>1</div>
-                <div className="last">3...</div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div className="pr">
-                <div className="btn-plus">+</div>
-                <div className="img-violet">
-                  <img
-                    className="violet"
-                    src={Five}
-                    alt="Img"
-                  />
-                </div>
-                <div className="block-group1">
-                  <div className="tr">Переходы с сайтов</div>
-                  <div className="group1">Группа. Источников 77</div>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">-</div>
-                <div>220</div>
-                <div>220</div>
-                <div>-</div>
-                <div>0</div>
-                <div className="last">0</div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">
-                  <a href="#">55.11</a>
-                </div>
-                <div>0</div>
-                <div className="last">109 487...</div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">4</div>
-                <div>0</div>
-                <div className="last">1...</div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div className="pr">
-                <div className="btn-plus" onClick={() => setShow(!show)}>{show ? '-' : '+'}</div>
-                <div className="img-violet">
-                  <img
-                    className="violet"
-                    src={Six}
-                    alt="Img"
-                  />
-                </div>
-                <div className="block-group1">
-                  <div className="tr">Email-рассылки</div>
-                  <div className="group1">Группа. Источников 3</div>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">-</div>
-                <div>84</div>
-                <div>84</div>
-                <div>-</div>
-                <div>75</div>
-                <div className="last">6 300</div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">
-                  <a href="#">15.4</a>
-                </div>
-                <div>40...</div>
-                <div className="last">29 021.45</div>
-              </div>
-            </td>
-            <td>
-              <div className="d-flex justify">
-                <div className="first">2</div>
-                <div>3 ...</div>
-                <div className="last">2...</div>
-              </div>
-            </td>
-          </tr>
-          {show && <>
+        {data.map(item => {
+          return(
+            <>
             <tr>
               <td>
                 <div className="pr">
-                  <div className="btn-plus"> </div>
+                  <div className="btn-plus">+</div>
                   <div className="img-violet">
                     <img
                       className="violet"
-                      src={Six}
+                      src={item.logo}
                       alt="Img"
                     />
                   </div>
                   <div className="block-group1">
-                    <div className="tr e-mail">e-mail / e-mail</div>
-                    <div className="group1"> </div>
+                    <div className="tr">{item.name}</div>
+                    <div className="group1">{item.group.sum}</div>
                   </div>
                 </div>
               </td>
               <td>
                 <div className="d-flex justify">
-                  <div className="first">-</div>
-                  <div>81</div>
-                  <div>81</div>
-                  <div>-</div>
-                  <div>39.51</div>
-                  <div className="last">3 200</div>
+                  <div className="first">{item.impressions}</div>
+                  <div>{item.clicks}</div>
+                  <div>{item.sessions}</div>
+                  <div>{item.ctr}</div>
+                  <div>{item.priceClick}</div>
+                  <div className="last">{item.expenses}</div>
                 </div>
               </td>
               <td>
                 <div className="d-flex justify">
                   <div className="first">
-                    <a href="#">15.21</a>
+                    <a href="#">{item.value1}</a>
                   </div>
-                  <div>21...</div>
-                  <div className="last">28 614.4</div>
+                  <div>{item.cpa}</div>
+                  <div className="last">{item.revenue}</div>
                 </div>
               </td>
               <td>
                 <div className="d-flex justify">
-                  <div className="first">2</div>
-                  <div>1 ...</div>
-                  <div className="last">2...</div>
+                  <div className="first">{item.value2}</div>
+                  <div>{item.cpf}</div>
+                  <div className="last">{item.cr}</div>
                 </div>
               </td>
             </tr>
-            <tr>
-              <td>
-                <div className="pr">
-                  <div className="btn-plus"> </div>
-                  <div className="img-violet">
-                    <img
-                      className="violet"
-                      src={Seven}
-                      alt="Img"
-                    />
-                  </div>
-                  <div className="block-group1">
-                    <div className="tr e-mail">getresponse / email</div>
-                    <div className="group1"> </div>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div className="d-flex justify">
-                  <div className="first">-</div>
-                  <div>1</div>
-                  <div>1</div>
-                  <div>-</div>
-                  <div>0</div>
-                  <div className="last">0</div>
-                </div>
-              </td>
-              <td>
-                <div className="d-flex justify">
-                  <div className="first">0</div>
-                  <div>0</div>
-                  <div className="last">407.05</div>
-                </div>
-              </td>
-              <td>
-                <div className="d-flex justify">
-                  <div className="first">0</div>
-                  <div>0</div>
-                  <div className="last">0</div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div className="pr">
-                  <div className="btn-plus"> </div>
-                  <div className="img-violet">
-                    <img
-                      className="violet"
-                      src={Eight}
-                      alt="Img"
-                    />
-                  </div>
-                  <div className="block-group1">
-                    <div className="tr e-mail">cm / email</div>
-                    <div className="group1"> </div>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div className="d-flex justify">
-                  <div className="first">-</div>
-                  <div>0</div>
-                  <div>0</div>
-                  <div>-</div>
-                  <div>0</div>
-                  <div className="last">0</div>
-                </div>
-              </td>
-              <td>
-                <div className="d-flex justify">
-                  <div className="first">0</div>
-                  <div>0</div>
-                  <div className="last">0</div>
-                </div>
-              </td>
-              <td>
-                <div className="d-flex justify">
-                  <div className="first">0</div>
-                  <div>0</div>
-                  <div className="last">0</div>
-                </div>
-              </td>
-            </tr>
-          </>}
-
+            </>
+          )
+        })}
         </tbody>
       </table>
     </div>
