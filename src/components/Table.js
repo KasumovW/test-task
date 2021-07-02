@@ -12,6 +12,7 @@ import Ten from './assets/ten.png';
 import Eleven from './assets/eleven.png';
 import Tvelv from './assets/tvelv.png';
 import { useSelector } from 'react-redux';
+import Section from './Section';
 
 
 function Table() {
@@ -181,52 +182,7 @@ function Table() {
         <tbody>
         {data.map(item => {
           return(
-            <>
-            <tr>
-              <td>
-                <div className="pr">
-                  {item.collapsed ? <div className="btn-plus">+</div> : <div className="btn-plus"> </div>}
-                  <div className="img-violet">
-                    <img
-                      className="violet"
-                      src={item.logo}
-                      alt="Img"
-                    />
-                  </div>
-                  <div className="block-group1">
-                    <div className="tr">{item.name}</div>
-                    <div className="group1">{item.group.sum}</div>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div className="d-flex justify">
-                  <div className="first">{item.impressions}</div>
-                  <div>{item.clicks}</div>
-                  <div>{item.sessions}</div>
-                  <div>{item.ctr}</div>
-                  <div>{item.priceClick}</div>
-                  <div className="last">{item.expenses}</div>
-                </div>
-              </td>
-              <td>
-                <div className="d-flex justify">
-                  <div className="first">
-                    <a href="#">{item.value1}</a>
-                  </div>
-                  <div>{item.cpa}</div>
-                  <div className="last">{item.revenue}</div>
-                </div>
-              </td>
-              <td>
-                <div className="d-flex justify">
-                  <div className="first">{item.value2}</div>
-                  <div>{item.cpf}</div>
-                  <div className="last">{item.cr}</div>
-                </div>
-              </td>
-            </tr>
-            </>
+            <Section item={item} key={item.id}/>
           )
         })}
         </tbody>

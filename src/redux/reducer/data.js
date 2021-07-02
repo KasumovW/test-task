@@ -2,7 +2,7 @@ const initialState = {
   data: [
     {
       name: "Пр тр",
-      collapsed: true,
+      collapsed: false,
       group: {
         sum: 'Группа. Источников 1',
         name: "name",
@@ -38,23 +38,7 @@ const initialState = {
     {
       name: "Яндекс Директ",
       collapsed: false,
-      group: {
-        sum: 'Группа. Источников 1',
-        name: "name",
-        logo: "https://testing1.alytics.ru/icons/usersgroup.png",
-        impressions: "-",
-        clicks: 1716,
-        sessions: 1716,
-        ctr: "-",
-        priceClick: 0,
-        expenses: 0,
-        value1: 1047.93,
-        cpa: 72,
-        revenue: 11509,
-        value2: 89,
-        cpf: 85,
-        cr: 1,
-      },
+      group: null,
       logo: "https://direct.yandex.ru/favicon.ico",
       impressions: "299571",
       clicks: 843,
@@ -72,7 +56,7 @@ const initialState = {
     },
     {
       name: "Органический поиск",
-      collapsed: true,
+      collapsed: false,
       group: {
         sum: 'Группа. Источников 1',
         name: "name",
@@ -108,23 +92,7 @@ const initialState = {
     {
       name: "Google Ads",
       collapsed: false,
-      group: {
-        sum: 'Группа. Источников 1',
-        name: "name",
-        logo: "https://testing1.alytics.ru/icons/usersgroup.png",
-        impressions: "-",
-        clicks: 1716,
-        sessions: 1716,
-        ctr: "-",
-        priceClick: 0,
-        expenses: 0,
-        value1: 1047.93,
-        cpa: 72,
-        revenue: 11509,
-        value2: 89,
-        cpf: 85,
-        cr: 1,
-      },
+      group: null,
       logo: "https://www.google.com/images/branding/product/1x/ads_24dp.png",
       impressions: 5272,
       clicks: 252,
@@ -142,7 +110,7 @@ const initialState = {
     },
     {
       name: "Переходы с сайтов",
-      collapsed: true,
+      collapsed: false,
       group: {
         sum: 'Группа. Источников 1',
         name: "name",
@@ -177,9 +145,9 @@ const initialState = {
     },
     {
       name: "Email-рассылки",
-      collapsed: true,
+      collapsed: false,
       group: {
-        sum: 'Группа. Источников 1',
+        sum: 'Группа. Источников 2',
         name: "name",
         logo: "https://testing1.alytics.ru/icons/usersgroup.png",
         impressions: "-",

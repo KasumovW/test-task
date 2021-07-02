@@ -1,8 +1,16 @@
-import { combineReducers, createStore } from 'redux';
-import { data } from './reducer/data';
+import { applyMiddleware, combineReducers, createStore } from "redux";
+import { data } from "./reducer/data";
+import thunk from "redux-thunk";
+import { createLogger } from 'redux-logger/src';
 
-const rootReducer = combineReducers({
-  data
+const logger = createLogger({
+  diff: true,
+  collapsed: true,
 })
 
-export const store = createStore(rootReducer);
+export const store = createStore(
+  combineReducers({
+    data,
+  }),
+  applyMiddleware(thunk, logger)
+);
