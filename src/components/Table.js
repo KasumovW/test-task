@@ -73,7 +73,7 @@ function Table() {
             <td className="" width='175'>
               <div className="d-flex justify">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex head-block-gear">
                     <div className="block-gear">
                       <img
                         src={Eleven}
@@ -185,7 +185,7 @@ function Table() {
             <tr>
               <td>
                 <div className="pr">
-                  <div className="btn-plus">+</div>
+                  {item.collapsed ? <div className="btn-plus">+</div> : <div className="btn-plus"> </div>}
                   <div className="img-violet">
                     <img
                       className="violet"

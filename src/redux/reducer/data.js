@@ -2,6 +2,7 @@ const initialState = {
   data: [
     {
       name: "Пр тр",
+      collapsed: true,
       group: {
         sum: 'Группа. Источников 1',
         name: "name",
@@ -36,6 +37,7 @@ const initialState = {
     },
     {
       name: "Яндекс Директ",
+      collapsed: false,
       group: {
         sum: 'Группа. Источников 1',
         name: "name",
@@ -70,6 +72,7 @@ const initialState = {
     },
     {
       name: "Органический поиск",
+      collapsed: true,
       group: {
         sum: 'Группа. Источников 1',
         name: "name",
@@ -104,6 +107,7 @@ const initialState = {
     },
     {
       name: "Google Ads",
+      collapsed: false,
       group: {
         sum: 'Группа. Источников 1',
         name: "name",
@@ -138,6 +142,7 @@ const initialState = {
     },
     {
       name: "Переходы с сайтов",
+      collapsed: true,
       group: {
         sum: 'Группа. Источников 1',
         name: "name",
@@ -172,6 +177,7 @@ const initialState = {
     },
     {
       name: "Email-рассылки",
+      collapsed: true,
       group: {
         sum: 'Группа. Источников 1',
         name: "name",
