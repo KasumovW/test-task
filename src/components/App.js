@@ -1,5 +1,5 @@
-import Table from './Table';
-import './style.css';
+import Table from "./Table";
+import "./style.css";
 
 function App() {
   return (
