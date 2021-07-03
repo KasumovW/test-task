@@ -14,7 +14,7 @@ function Section() {
           <div className="icons-1">
             <i className="fas fa-cog"></i>
           </div>
-          <div>
+          <div className='icons-1'>
             <i className="fas fa-question-circle"></i>
           </div>
         </div>
