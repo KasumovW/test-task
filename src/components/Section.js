@@ -1,55 +1,73 @@
-import React from 'react';
+import React from "react";
+import Nine from "./assets/nine.png";
+import Ten from "./assets/ten.png";
+import Eleven from "./assets/eleven.png";
+import Tvelv from "./assets/tvelv.png";
 
-function Section(props) {
+function Section() {
   return (
-    <>
-      <tr>
-        <td>
-          <div className="pr">
-            {props.item.group ? <div className="btn-plus">+</div> : <div className="btn-plus"> </div>}
-            <div className="img-violet">
-              <img
-                className="violet"
-                src={props.item.logo}
-                alt="Img"
-              />
+    <div className="d-flex">
+      <div className="red-text">Источники трафика</div>
+      <div className="d-flex block-traffic">
+        <div className="traffic">Трафик</div>
+        <div className="block-icons">
+          <div className="icons-1">
+            <i className="fas fa-cog"></i>
+          </div>
+          <div>
+            <i className="fas fa-question-circle"></i>
+          </div>
+        </div>
+      </div>
+      <div className="d-flex block-price">
+        <div>
+        <div className="d-flex">
+          <div className="block-img-nine">
+            <img src={Nine} alt="Img" className="img" />
+          </div>
+          <div className="price">Продажи</div>
+        </div>
+        <div className="d-flex">
+          <div className="block-img-ten">
+            <img src={Ten} alt="Img" className="img" />
+          </div>
+          <div className="model">Линейная модель</div>
+        </div>
+        </div>
+        <div className="block-icons">
+          <div className="icons-1">
+            <i className="fas fa-cog"></i>
+          </div>
+          <div>
+            <i className="fas fa-question-circle"></i>
+          </div>
+        </div>
+      </div>
+      <div className="d-flex block-GA">
+        <div>
+          <div className="d-flex">
+            <div className="block-img-eleven">
+              <img src={Eleven} alt="Img" className="img" />
             </div>
-            <div className="block-group1">
-              <div className="tr">{props.item.name}</div>
-              <div className="group1">
-                {props.item.group?.sum}
-              </div>
+            <div className="price">Цель с осн. GA</div>
+          </div>
+          <div className="d-flex">
+            <div className="block-img-tvelv">
+              <img src={Tvelv} alt="Img" className="img" />
             </div>
+            <div className="model">Составная цель</div>
           </div>
-        </td>
-        <td>
-          <div className="d-flex justify">
-            <div className="first">{props.item.impressions}</div>
-            <div>{props.item.clicks}</div>
-            <div>{props.item.sessions}</div>
-            <div>{props.item.ctr}</div>
-            <div>{props.item.priceClick}</div>
-            <div className="last">{props.item.expenses}</div>
+        </div>
+        <div className="block-icons">
+          <div className="icons-1">
+            <i className="fas fa-cog"></i>
           </div>
-        </td>
-        <td>
-          <div className="d-flex justify">
-            <div className="first">
-              <a href="#">{props.item.value1}</a>
-            </div>
-            <div>{props.item.cpa}</div>
-            <div className="last">{props.item.revenue}</div>
+          <div>
+            <i className="fas fa-question-circle"></i>
           </div>
-        </td>
-        <td>
-          <div className="d-flex justify">
-            <div className="first">{props.item.value2}</div>
-            <div>{props.item.cpf}</div>
-            <div className="last">{props.item.cr}</div>
-          </div>
-        </td>
-      </tr>
-    </>
+        </div>
+      </div>
+    </div>
   );
 }
 
