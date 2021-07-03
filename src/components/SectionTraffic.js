@@ -21,18 +21,18 @@ function Section() {
       </div>
       <div className="d-flex block-price">
         <div>
-        <div className="d-flex">
-          <div className="block-img-nine">
-            <img src={Nine} alt="Img" className="img" />
+          <div className="d-flex">
+            <div className="block-img-nine">
+              <img src={Nine} alt="Img" className="img" />
+            </div>
+            <div className="price">Продажи</div>
           </div>
-          <div className="price">Продажи</div>
-        </div>
-        <div className="d-flex">
-          <div className="block-img-ten">
-            <img src={Ten} alt="Img" className="img" />
+          <div className="d-flex">
+            <div className="block-img-ten">
+              <img src={Ten} alt="Img" className="img" />
+            </div>
+            <div className="model">Линейная модель</div>
           </div>
-          <div className="model">Линейная модель</div>
-        </div>
         </div>
         <div className="block-icons">
           <div className="icons-1">

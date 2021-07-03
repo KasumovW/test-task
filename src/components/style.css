@@ -1,7 +1,8 @@
 body {
-  margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
 }
 
 .d-flex {
@@ -9,7 +10,7 @@ body {
 }
 
 .red-text {
-  color: #C9001A;
+  color: #c9001a;
   padding: 25px;
   border: 1px solid silver;
   width: 270px;
@@ -30,7 +31,7 @@ body {
 
 .traffic {
   padding: 25px;
-  color: #C9001A;
+  color: #c9001a;
 }
 
 .icons-1 {
@@ -66,7 +67,7 @@ body {
 .price {
   margin-top: 5px;
   margin-left: 10px;
-  color: #C9001A;
+  color: #c9001a;
 }
 
 .block-price {
@@ -93,4 +94,113 @@ body {
   width: 270px;
   border: 1px solid silver;
   padding: 25px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0;
+}
+
+li {
+  text-align: center;
+  margin: auto;
+}
+
+.block-ul {
+  width: 550px;
+  border: 1px solid silver;
+  text-align: center;
+}
+
+.settings i {
+  font-size: 11px;
+}
+
+.settings:first-line {
+  color: #1529c9;
+  font-size: 11px;
+}
+
+.show i {
+  font-size: 12px;
+}
+
+.session i {
+  font-size: 12px;
+}
+
+.ctr i {
+  font-size: 12px;
+}
+
+.block-cpa {
+  width: 250px;
+  border: 1px solid silver;
+}
+
+.block-cpa ul {
+  margin-top: 25px;
+}
+
+.block-GA ul {
+  margin-top: 25px;
+}
+
+.block-final {
+  width: 550px;
+  border: 1px solid silver;
+}
+
+.block-final ul {
+  margin-top: 25px;
+}
+
+.block-color {
+  background-color: #fef7ec;
+}
+
+.block-data {
+  width: 320px;
+  border: 1px solid silver;
+  height: 60px;
+}
+
+.block-plus {
+  background-color: grey;
+  color: white;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 25px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.block-img-user {
+  width: 25px;
+  margin-top: 23px;
+  margin-left: 12px;
+}
+
+.block-group {
+  color: grey;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.block-group-name {
+  color: #1529c9;
+}
+
+.block-groupName {
+  margin-left: 12px;
+  margin-top: 20px;
+}
+
+.fixed {
+  position: absolute;
+  left: 60px;
 }

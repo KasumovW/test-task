@@ -1,26 +1,21 @@
 import React from "react";
-import One from './assets/one.ico';
-import Two from './assets/two.ico';
-import Three from './assets/three.ico';
-import Four from './assets/four.png';
-import Five from './assets/five.ico';
-import Six from './assets/six.ico';
-import Seven from './assets/seven.ico';
-import Eight from './assets/eight.ico';
-import Nine from './assets/nine.png';
-import Ten from './assets/ten.png';
-import Eleven from './assets/eleven.png';
-import Tvelv from './assets/tvelv.png';
-import SectionName from './SectionName';
-import Section from './Section';
-
+import SectionName from "./SectionName";
+import SectionTraffic from "./SectionTraffic";
+import SectionResults from "./SectionResults";
+import SectionData from "./SectionData";
+import { useSelector } from "react-redux";
 
 function Table() {
+  const data = useSelector((state) => state.data.data);
 
   return (
     <div>
-      <Section />
+      <SectionTraffic />
       <SectionName />
+      <SectionResults />
+      {data.map((data) => {
+        return <SectionData data={data} key={data.id} />;
+      })}
     </div>
   );
 }
