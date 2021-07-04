@@ -27,7 +27,7 @@ function SectionData(props) {
               <div className="block-group">{props.data.collapsed}</div>
             </div>
           </div>
-          {props.data.online && <div className='online'></div>}
+          {props.data.online && <div className="online"></div>}
         </div>
         <div className="block-final">
           <ul>
