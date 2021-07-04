@@ -205,3 +205,20 @@ li {
   position: absolute;
   left: 60px;
 }
+
+.online {
+  width: 10px;
+  height: 10px;
+  background-color: lawngreen;
+  border-radius: 15px;
+  margin-top: 25px;
+  margin-left: 300px;
+}
+
+.justify {
+  justify-content: space-between;
+}
+
+.transformation {
+  transition: 0.2s;
+}

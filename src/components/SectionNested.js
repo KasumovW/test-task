@@ -2,7 +2,7 @@ import React from "react";
 
 function SectionNested(props) {
   return (
-    <>
+    <div className='transformation'>
       <div className="d-flex">
         <div className="d-flex block-data">
           <div className="d-flex fixed">
@@ -42,7 +42,7 @@ function SectionNested(props) {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
