@@ -59,7 +59,7 @@ function SectionData({ data }) {
       </div>
       {show
         ? data.group?.map((item) => {
-            return <SectionNested item={item} />;
+            return <SectionNested item={item} key={data.id} />;
           })
         : ""}
     </>
