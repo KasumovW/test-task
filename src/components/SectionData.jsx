@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import SectionNested from "./SectionNested";
+import PropTypes from "prop-types";
 
-function SectionData(props) {
+function SectionData({ data }) {
   const [show, setShow] = useState(false);
 
   return (
     <>
       <div className="d-flex">
         <div className="d-flex block-data justify">
-          {props.data.group && (
+          {data.group && (
             <div
               className="block-plus"
               onClick={() => {
@@ -20,49 +21,53 @@ function SectionData(props) {
           )}
           <div className="d-flex fixed">
             <div className="block-img-user">
-              <img src={props.data.logo} alt="img" className="img" />
+              <img src={data.logo} alt="img" className="img" />
             </div>
             <div className="block-groupName">
-              <div className="block-group-name">{props.data.name}</div>
-              <div className="block-group">{props.data.collapsed}</div>
+              <div className="block-group-name">{data.name}</div>
+              <div className="block-group">{data.collapsed}</div>
             </div>
           </div>
-          {props.data.online && <div className="online"></div>}
+          {data.online && <div className="online"></div>}
         </div>
         <div className="block-final">
           <ul>
-            <li className="show">{props.data.impressions}</li>
-            <li>{props.data.clicks}</li>
-            <li className="session">{props.data.sessions}</li>
-            <li className="ctr">{props.data.ctr}</li>
-            <li>{props.data.priceClick}</li>
-            <li className="d-flex">{props.data.expenses}</li>
+            <li className="show">{data.impressions}</li>
+            <li>{data.clicks}</li>
+            <li className="session">{data.sessions}</li>
+            <li className="ctr">{data.ctr}</li>
+            <li>{data.priceClick}</li>
+            <li className="d-flex">{data.expenses}</li>
           </ul>
         </div>
         <div className="block-cpa">
           <ul>
             <li>
-              <a href="#">{props.data.value1}</a>
+              <a href="#">{data.value1}</a>
             </li>
-            <li>{props.data.cpa}</li>
-            <li>{props.data.revenue}</li>
+            <li>{data.cpa}</li>
+            <li>{data.revenue}</li>
           </ul>
         </div>
         <div className="block-GA">
           <ul>
-            <li>{props.data.value2}</li>
-            <li>{props.data.cpf}</li>
-            <li>{props.data.cr}</li>
+            <li>{data.value2}</li>
+            <li>{data.cpf}</li>
+            <li>{data.cr}</li>
           </ul>
         </div>
       </div>
       {show
-        ? props.data.group?.map((item) => {
+        ? data.group?.map((item) => {
             return <SectionNested item={item} />;
           })
         : ""}
     </>
   );
 }
+
+SectionData.propTypes = {
+  data: PropTypes.object.isRequired,
+};
 
 export default SectionData;
