@@ -30,31 +30,23 @@ function SectionData({ data }) {
           </div>
           {data.online && <div className="online"></div>}
         </div>
-        <div className="block-final">
-          <ul>
-            <li className="show">{data.impressions}</li>
-            <li>{data.clicks}</li>
-            <li className="session">{data.sessions}</li>
-            <li className="ctr">{data.ctr}</li>
-            <li>{data.priceClick}</li>
-            <li className="d-flex">{data.expenses}</li>
-          </ul>
+        <div className="block-final d-flex justify">
+          <div className="block-call">{data.impressions}</div>
+          <div className="block-call">{data.clicks}</div>
+          <div className="block-call">{data.sessions}</div>
+          <div className="block-call">{data.ctr}</div>
+          <div className="block-call">{data.priceClick}</div>
+          <div className="block-call">{data.expenses}</div>
         </div>
-        <div className="block-cpa">
-          <ul>
-            <li>
-              <a href="#">{data.value1}</a>
-            </li>
-            <li>{data.cpa}</li>
-            <li>{data.revenue}</li>
-          </ul>
+        <div className="block-cpa d-flex justify">
+          <div className="block-call">{data.value1}</div>
+          <div className="block-call">{data.cpa}</div>
+          <div className="block-call">{data.revenue}</div>
         </div>
-        <div className="block-GA">
-          <ul>
-            <li>{data.value2}</li>
-            <li>{data.cpf}</li>
-            <li>{data.cr}</li>
-          </ul>
+        <div className="block-GA d-flex justify">
+          <div className="block-call">{data.value2}</div>
+          <div className="block-call">{data.cpf}</div>
+          <div className="block-call">{data.cr}</div>
         </div>
       </div>
       {show

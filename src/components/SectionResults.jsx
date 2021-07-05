@@ -4,15 +4,13 @@ function SectionResults() {
   return (
     <div className="d-flex">
       <div className="block-name block-color">Итоги</div>
-      <div className="block-final block-color">
-        <ul>
-          <li className="show">327 872</li>
-          <li>6 889</li>
-          <li className="session">5 325</li>
-          <li className="ctr">2.1</li>
-          <li>11.06</li>
-          <li className="d-flex">76 195</li>
-        </ul>
+      <div className="block-final d-flex justify">
+        <div className="block-call">327872</div>
+        <div className="block-call">6889</div>
+        <div className="block-call">5325</div>
+        <div className="block-call">2.1</div>
+        <div className="block-call">11.06</div>
+        <div className="block-call">76195</div>
       </div>
       <div className="block-cpa block-color">
         <ul>
