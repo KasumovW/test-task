@@ -30,23 +30,47 @@ function SectionData({ data }) {
           </div>
           {data.online && <div className="online"></div>}
         </div>
-        <div className="block-final d-flex justify">
-          <div className="block-call">{data.impressions}</div>
-          <div className="block-call">{data.clicks}</div>
-          <div className="block-call">{data.sessions}</div>
-          <div className="block-call">{data.ctr}</div>
-          <div className="block-call">{data.priceClick}</div>
-          <div className="block-call">{data.expenses}</div>
+        <div className="block-final d-flex">
+          <table align='center'>
+            <tr>
+              <td>
+                <div className="block-call">{data.impressions}</div>
+              </td>
+              <td>
+                <div className="block-call">{data.clicks}</div>
+              </td>
+              <td>
+                <div className="block-call">{data.sessions}</div>
+              </td>
+              <td>
+                <div className="block-call">{data.ctr}</div>
+              </td>
+              <td>
+                <div className="block-call">{data.priceClick}</div>
+              </td>
+              <td>
+                <div className="block-call">{data.expenses}</div>
+              </td>
+            </tr>
+          </table>
         </div>
-        <div className="block-cpa d-flex justify">
-          <div className="block-call">{data.value1}</div>
-          <div className="block-call">{data.cpa}</div>
-          <div className="block-call">{data.revenue}</div>
+        <div className="block-cpa">
+          <table align='center'>
+            <tr>
+              <td><div className="block-call"><a href="#">{data.value1}</a></div></td>
+              <td><div className="block-call">{data.cpa}</div></td>
+              <td><div className="block-call">{data.revenue}</div></td>
+            </tr>
+          </table>
         </div>
-        <div className="block-GA d-flex justify">
-          <div className="block-call">{data.value2}</div>
-          <div className="block-call">{data.cpf}</div>
-          <div className="block-call">{data.cr}</div>
+        <div className="block-GA">
+          <table align='center'>
+            <tr>
+              <td><div className="block-call-two">{data.value2}</div></td>
+              <td><div className="block-call-two">{data.cpf}</div></td>
+              <td><div className="block-call-two">{data.cr}</div></td>
+            </tr>
+          </table>
         </div>
       </div>
       {show

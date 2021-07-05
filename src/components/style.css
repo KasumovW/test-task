@@ -226,5 +226,11 @@ li {
 .block-call {
   width: 80px;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 20px;
+}
+
+.block-call-two {
+  width: 65px;
+  text-align: center;
+  margin-top: 20px;
 }

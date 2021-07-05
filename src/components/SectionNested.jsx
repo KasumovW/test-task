@@ -16,23 +16,71 @@ function SectionNested({ item }) {
             </div>
           </div>
         </div>
-        <div className="block-final d-flex justify">
-          <div className="block-call">{item.impressions}</div>
-          <div className="block-call">{item.clicks}</div>
-          <div className="block-call">{item.sessions}</div>
-          <div className="block-call">{item.ctr}</div>
-          <div className="block-call">{item.priceClick}</div>
-          <div className="block-call">{item.expenses}</div>
+        <div className="block-final">
+          <table align="center">
+            <tr>
+              <td>
+                <div className="block-call">
+                  <div className="block-call">{item.impressions}</div>
+                </div>
+              </td>
+              <td>
+                <div className="block-call">
+                  <div className="block-call">{item.clicks}</div>
+                </div>
+              </td>
+              <td>
+                <div className="block-call">
+                  <div className="block-call">{item.sessions}</div>
+                </div>
+              </td>
+              <td>
+                <div className="block-call">
+                  <div className="block-call">{item.ctr}</div>
+                </div>
+              </td>
+              <td>
+                <div className="block-call">
+                  <div className="block-call">{item.priceClick}</div>
+                </div>
+              </td>
+              <td>
+                <div className="block-call">
+                  <div className="block-call">{item.expenses}</div>
+                </div>
+              </td>
+            </tr>
+          </table>
         </div>
-        <div className="block-cpa d-flex justify">
-          <div className="block-call">{item.value1}</div>
-          <div className="block-call">{item.cpa}</div>
-          <div className="block-call">{item.revenue}</div>
+        <div className="block-cpa">
+          <table align="center">
+            <tr>
+              <td>
+                <div className="block-call">{item.value1}</div>
+              </td>
+              <td>
+                <div className="block-call">{item.cpa}</div>
+              </td>
+              <td>
+                <div className="block-call">{item.revenue}</div>
+              </td>
+            </tr>
+          </table>
         </div>
-        <div className="block-GA d-flex justify">
-          <div className="block-call">{item.value2}</div>
-          <div className="block-call">{item.cpf}</div>
-          <div className="block-call">{item.cr}</div>
+        <div className="block-GA">
+          <table align="center">
+            <tr>
+              <td>
+                <div className="block-call-two">{item.value2}</div>
+              </td>
+              <td>
+                <div className="block-call-two">{item.cpf}</div>
+              </td>
+              <td>
+                <div className="block-call-two">{item.cr}</div>
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>

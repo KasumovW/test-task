@@ -73,7 +73,7 @@ const initialState = {
           ctr: "-",
           priceClick: 6456,
           expenses: 5,
-          value1: 6.4564564,
+          value1: 6.64,
           cpa: 0,
           revenue: 7,
           value2: 8,
