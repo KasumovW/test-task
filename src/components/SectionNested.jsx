@@ -16,31 +16,23 @@ function SectionNested({ item }) {
             </div>
           </div>
         </div>
-        <div className="block-final">
-          <ul>
-            <li className="show">{item.impressions}</li>
-            <li>{item.clicks}</li>
-            <li className="session">{item.sessions}</li>
-            <li className="ctr">{item.ctr}</li>
-            <li>{item.priceClick}</li>
-            <li className="d-flex">{item.expenses}</li>
-          </ul>
+        <div className="block-final d-flex justify">
+          <div className="block-call">{item.impressions}</div>
+          <div className="block-call">{item.clicks}</div>
+          <div className="block-call">{item.sessions}</div>
+          <div className="block-call">{item.ctr}</div>
+          <div className="block-call">{item.priceClick}</div>
+          <div className="block-call">{item.expenses}</div>
         </div>
-        <div className="block-cpa">
-          <ul>
-            <li>
-              <a href="#">{item.value1}</a>
-            </li>
-            <li>{item.cpa}</li>
-            <li>{item.revenue}</li>
-          </ul>
+        <div className="block-cpa d-flex justify">
+          <div className="block-call">{item.value1}</div>
+          <div className="block-call">{item.cpa}</div>
+          <div className="block-call">{item.revenue}</div>
         </div>
-        <div className="block-GA">
-          <ul>
-            <li>{item.value2}</li>
-            <li>{item.cpf}</li>
-            <li>{item.cr}</li>
-          </ul>
+        <div className="block-GA d-flex justify">
+          <div className="block-call">{item.value2}</div>
+          <div className="block-call">{item.cpf}</div>
+          <div className="block-call">{item.cr}</div>
         </div>
       </div>
     </div>
